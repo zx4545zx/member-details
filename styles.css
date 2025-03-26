@@ -140,6 +140,10 @@ body {
     border-radius: 10px;
 }
 
+.progress-62 {
+    width: 62.5%;
+}
+
 /* Animations */
 .card {
     transition: transform 0.3s ease;
