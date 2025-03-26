@@ -156,6 +156,14 @@ body {
     width: 66.7%;
 }
 
+.progress-30 {
+    width: 30%;
+}
+
+.progress-10 {
+    width: 10%;
+}
+
 .package-card {
     transition: all 0.3s ease;
     border: none;
@@ -165,6 +173,61 @@ body {
 .package-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Usage Styles */
+.product-usage-list .progress {
+    height: 8px;
+}
+
+.usage-chart {
+    padding: 0.5rem;
+}
+
+.chart-container {
+    height: 120px;
+}
+
+.chart-bar {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar-item {
+    flex: 1;
+    margin: 0 5px;
+}
+
+.bar-fill {
+    position: relative;
+}
+
+.bar-fill.bg-primary {
+    height: 60%;
+}
+
+.bar-fill.bg-info {
+    height: 30%;
+}
+
+.bar-fill.bg-success {
+    height: 10%;
+}
+
+.bar-value {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+.bar-label {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
 }
 
 /* Animations */
