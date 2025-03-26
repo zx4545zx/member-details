@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติลูกค้า - Hair Salon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Customer Header -->
+        <div class="card mb-4">
+            <div class="card-header gradient-custom text-white">
+                <h4 class="mb-0">ข้อมูลลูกค้า</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img src="https://via.placeholder.com/150" class="profile-image mb-2" alt="Customer Profile">
+                        <h5>คุณ สมศรี ใจดี</h5>
+                        <span class="badge-rank">
+                            <i class="bi bi-star-fill me-1"></i> VIP Gold
+                        </span>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <p><i class="bi bi-telephone-fill text-primary me-2"></i> 081-234-5678</p>
+                                <p><i class="bi bi-envelope-fill text-primary me-2"></i> somsri@example.com</p>
+                                <p><i class="bi bi-calendar-event text-primary me-2"></i> ลูกค้าตั้งแต่: 15 มกราคม 2565</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><i class="bi bi-gift-fill text-primary me-2"></i> แต้มสะสม: <span class="points-badge">1,250 แต้ม</span></p>
+                                <p><i class="bi bi-calendar-check text-primary me-2"></i> เข้าใช้บริการล่าสุด: 20 มีนาคม 2568</p>
+                                <p><i class="bi bi-scissors text-primary me-2"></i> ช่างประจำ: คุณนิดา</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Purchase History -->
+        <div class="card">
+            <div class="card-header gradient-custom text-white d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">ประวัติการซื้อและใช้บริการ</h4>
+                <div class="dropdown">
+                    <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-funnel"></i> กรอง
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">ทั้งหมด</a></li>
+                        <li><a class="dropdown-item" href="#">บริการ</a></li>
+                        <li><a class="dropdown-item" href="#">สินค้า</a></li>
+                        <li><a class="dropdown-item" href="#">แพ็คเกจ/โปรโมชั่น</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="historyTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="visits-tab" data-bs-toggle="tab" data-bs-target="#visits" type="button" role="tab">การเข้าใช้บริการ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="services-tab" data-bs-toggle="tab" data-bs-target="#services" type="button" role="tab">บริการ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="products-tab" data-bs-toggle="tab" data-bs-target="#products" type="button" role="tab">สินค้า</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages" type="button" role="tab">แพ็คเกจ/โปรโมชั่น</button>
+                    </li>
+                </ul>
+                
+                <div class="tab-content" id="historyTabContent">
+                    <!-- Visits Tab -->
+                    <div class="tab-pane fade show active" id="visits" role="tabpanel">
+                        <div class="timeline">
+                            <!-- Visit 1 -->
+                            <div class="timeline-item">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="mb-0">20 มีนาคม 2568</h5>
+                                            <div>
+                                                <span class="badge bg-info">ออเดอร์ #12345</span>
+                                                <span class="badge bg-success">ใบเสร็จ #INV-5678</span>
+                                            </div>
+                                        </div>
+                                        <div class="small text-muted">
+                                            <i class="bi bi-geo-alt"></i> โซน A, โต๊ะ 3 | <i class="bi bi-person"></i> ช่าง: คุณนิดา
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6>บริการที่ใช้</h6>
+                                        <div class="service-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>สระผม + ไดร์</strong>
+                                                    <div class="small text-muted">
+                                                        <ul class="mb-0">
+                                                            <li>แชมพู Kerastase 20 มล.</li>
+                                                            <li>ทรีทเม้นท์ L'Oreal 15 มล.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <div>฿350</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="service-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>ทรีทเม้นท์เคลือบสี</strong>
+                                                    <div class="small text-muted">
+                                                        <ul class="mb-0">
+                                                            <li>สี Wella #5B 30 มล.</li>
+                                                            <li>น้ำยาเคลือบเงา 25 มล.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <div>฿1,200</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h6 class="mt-3">สินค้าที่ซื้อ</h6>
+                                        <div class="product-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>แชมพู Kerastase Nutritive</strong>
+                                                    <div class="small text-muted">250 มล. x 1 ขวด</div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <div>฿990</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <h6 class="mt-3">แพ็คเกจ/โปรโมชั่น</h6>
+                                        <div class="package-item">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>โปรโมชั่นสระไดร์บุฟเฟ่ 30 วัน</strong>
+                                                    <div class="small text-muted">
+                                                        <div>แถมทรีทเม้นท์ 1 ครั้ง</div>
+                                                        <div>เริ่ม 20 มี.ค. 68 - หมดอายุ 19 เม.ย. 68</div>
+                                                        <div>ใช้ไปแล้ว: 1/30 ครั้ง</div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <div>฿3,500</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <hr>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>การชำระเงิน</h6>
+                                                <div>
+                                                    <span class="payment-method"><i class="bi bi-credit-card"></i> บัตรเครดิต</span>
+                                                    <span class="payment-method"><i class="bi bi-wallet2"></i> เงินสด</span>
+                                                </div>
+                                                <div class="mt-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>บัตรเครดิต (Visa ****1234)</div>
+                                                        <div>฿5,000</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>เงินสด</div>
+                                                        <div>฿1,250</div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div>เงินทอน</div>
+                                                        <div>฿0</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6">
+                                                <h6>สรุปยอด</h6>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>ยอดรวมสินค้า/บริการ</div>
+                                                    <div>฿6,040</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>Service Charge 10%</div>
+                                                    <div>฿604</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div>VAT 7%</div>
+                                                    <div>฿423</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between fw-bold mt-2">
+                                                    <div>ยอดรวมทั้งสิ้น</div>
+                                                    <div>฿6,250</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mt-3 p-2 bg-light rounded">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <i class="bi bi-gift text-success"></i> แต้มที่ได้รับ: <span class="points-badge">+125 แต้ม</span>
+                                                </div>
+                                                <div>
+                                                    <i class="bi bi-arrow-repeat text-danger"></i> แต้มที่ใช้ไป: <span class="badge bg-danger">-0 แต้ม</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Visit 2 -->
+                            <div class="timeline-item">
+                                <div class="card">
+                                    <div class="card-header bg-light">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h5 class="mb-0">15 กุมภาพันธ์ 2568</h5>
+                                            <div>
+                                                <span class="badge bg-info">ออเดอร์ #12100</span>
+                                                <span class="badge bg-success">ใบเสร็จ #INV-5432</span>
+                                            </div>
+                                        </div>
+                                        <div class="small text-muted">
+                                            <i class="bi bi-geo-alt"></i> โซน B, โต๊ะ 7 | <i class="bi bi-person"></i> ช่าง: คุณแอน
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <!-- Visit 2 content similar to Visit 1 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Tab -->
+                    <div class="tab-pane fade" id="services" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>วันที่</th>
+                                        <th>บริการ</th>
+                                        <th>ผลิตภัณฑ์ที่ใช้</th>
+                                        <th>ช่าง</th>
+                                        <th>ราคา</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20 มี.ค. 68</td>
+                                        <td>สระผม + ไดร์</td>
+                                        <td>
+                                            <ul class="mb-0">
+                                                <li>แชมพู Kerastase 20 มล.</li>
+                                                <li>ทรีทเม้นท์ L'Oreal 15 มล.</li>
+                                            </ul>
+                                        </td>
+                                        <td>คุณนิดา</td>
+                                        <td>฿350</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20 มี.ค. 68</td>
+                                        <td>ทรีทเม้นท์เคลือบสี</td>
+                                        <td>
+                                            <ul class="mb-0">
+                                                <li>สี Wella #5B 30 มล.</li>
+                                                <li>น้ำยาเคลือบเงา 25 มล.</li>
+                                            </ul>
+                                        </td>
+                                        <td>คุณนิดา</td>
+                                        <td>฿1,200</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Products Tab -->
+                    <div class="tab-pane fade" id="products" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>วันที่</th>
+                                        <th>สินค้า</th>
+                                        <th>จำนวน</th>
+                                        <th>ราคาต่อชิ้น</th>
+                                        <th>ราคารวม</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20 มี.ค. 68</td>
+                                        <td>แชมพู Kerastase Nutritive 250 มล.</td>
+                                        <td>1 ขวด</td>
+                                        <td>฿990</td>
+                                        <td>฿990</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <!-- Packages Tab -->
+                    <div class="tab-pane fade" id="packages" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <div class="card-header bg-success text-white">
+                                        <h5 class="mb-0">โปรโมชั่นสระไดร์บุฟเฟ่ 30 วัน</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <span class="badge bg-warning text-dark">กำลังใช้งาน</span>
+                                            <span class="badge bg-info">เหลือ 29 ครั้ง</span>
+                                        </div>
+                                        
+                                        <p><strong>รายละเอียด:</strong> สระผม+ไดร์ ไม่จำกัดจำนวนครั้ง ภายใน 30 วัน</p>
+                                        <p><strong>สิทธิพิเศษ:</strong> แถมทรีทเม้นท์ 1 ครั้ง</p>
+                                        <p><strong>วันที่ซื้อ:</strong> 20 มีนาคม 2568</p>
+                                        <p><strong>วันหมดอายุ:</strong> 19 เมษายน 2568</p>
+                                        <p><strong>ราคา:</strong> ฿3,500</p>
+                                        
+                                        <hr>
+                                        
+                                        <h6>ประวัติการใช้</h6>
+                                        <div class="table-responsive">
+                                            <table class="table table-sm">
+                                                <thead class="table-light">
+                                                    <tr>
+                                                        <th>วันที่</th>
+                                                        <th>บริการที่ใช้</th>
+                                                        <th>ผลิตภัณฑ์ที่ใช้</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>20 มี.ค. 68</td>
+                                                        <td>สระผม + ไดร์</td>
+                                                        <td>
+                                                            <ul class="mb-0">
+                                                                <li>แชมพู Kerastase 20 มล.</li>
+                                                                <li>ทรีทเม้นท์ L'Oreal 15 มล.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Loyalty Section -->
+        <div class="card mt-4">
+            <div class="card-header gradient-custom text-white">
+                <h4 class="mb-0">ข้อมูลแต้มสะสมและสิทธิประโยชน์</h4>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body text-center">
+                                <h5>แต้มสะสมปัจจุบัน</h5>
+                                <div class="display-4 fw-bold text-success">1,250</div>
+                                <div class="progress mt-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 62.5%;" aria-valuenow="62.5" aria-valuemin="0" aria-valuemax="100">62.5%</div>
+                                </div>
+                                <div class="small text-muted mt-2">อีก 750 แต้ม เพื่ออัพเกรดเป็น VIP Platinum</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>ประวัติการได้รับและใช้แต้ม</h5>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>วันที่</th>
+                                                <th>รายการ</th>
+                                                <th>แต้ม</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>20 มี.ค. 68</td>
+                                                <td>ได้รับจากการซื้อสินค้า/บริการ</td>
+                                                <td class="text-success">+125</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15 ก.พ. 68</td>
+                                                <td>ได้รับจากการซื้อสินค้า/บริการ</td>
+                                                <td class="text-success">+33</td>
+                                            </tr>
+                                            <tr>
+                                                <td>20 ธ.ค. 67</td>
+                                                <td>แลกรับส่วนลด ฿500</td>
+                                                <td class="text-danger">-500</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
